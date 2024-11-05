@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+/* medical content styling begins */
+.medical-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 3rem 1rem;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+.medical-content {
+  width: 580px;
+  margin-top: 3rem;
+  min-width: 300px;
+}
+.medical-content h1 {
+  color: #333333;
+  font-family: "Lato-Regular", sans-serif;
+  letter-spacing: -0.07em;
+  font-weight: 400;
+  font-size: 42px;
+  margin: 1rem 0 1rem 0;
+}
+.medical-content h1 span {
+  font-family: "Lato-Bold", sans-serif;
+  font-weight: 700;
+}
+.medical-content p {
+  color: #333333;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 400;
+  width: 559px;
+  margin-bottom: 1rem;
+}
+/* medical content styling enss */
+
+/* medical form styling */
+.medical-form {
+  width: 560px;
+  min-width: 300px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.medical-form form label {
+  color: #111010;
+  padding: 2rem 0 0.6rem 0;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.medical-form form select,
+.medical-form form input {
+  border: 1px solid #b0b0b0;
+  padding: 18px 30px 18px 16px;
+  border-radius: 8px;
+  outline: none;
+  color: #7e7b7b;
+  font-size: 1.1rem;
+}
+.medical-form form input::placeholder {
+  font-size: 1.1rem;
+}
+.medical-form form p {
+  color: #7e7b7b;
+  padding-top: 0.6rem;
+  font-family: "Lato-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.medical-form button {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.2rem 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #4b35ff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Lato-SemiBold", sans-serif;
+  transition: all 0.5s ease;
+}
+.medical-form button:hover {
+  background-color: #3525ac;
+  transform: scale(1.04);
+}
+/* medical form styling  ends*/
+
+@media (max-width: 1120px) {
+  .medical-container .medical-content .img1 {
+    display: none;
+  }
+}
+@media (max-width: 884px) {
+  .medical-container .medical-content .img1 {
+    display: none;
+  }
+  .medical-content p span {
+    display: none;
+  }
+  .medical-content p {
+    font-size: 0.975rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .medical-content,
+  .medical-form {
+    /* width: 560px;
+    min-width: 300px;*/
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .medical-content {
+    margin-top: 1rem;
+  }
+  .medical-content,
+  .medical-form {
+    width: 560px;
+    max-width: 380px;
+  }
+  .medical-content h1 {
+    font-size: 1.713rem;
+  }
+  .medical-content p {
+    font-size: 0.875rem;
+    width: 559px;
+    max-width: 350px;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 412px) {
+  .medical-content h1 {
+    font-size: 1.608rem;
+  }
+}
+@media (max-width: 360px) {
+  .medical-content h1 {
+    font-size: 1.508rem;
+  }
+}
+@media (max-width: 320px) {
+  .medical-content h1 {
+    font-size: 1.408rem;
+  }
+}

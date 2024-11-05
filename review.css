@@ -1,0 +1,30 @@
+/*#reviewDetails {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Styling for each detail item */
+/*.detail-item {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for labels */
+/*.detail-item label {
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+  width: 200px; /* Adjust width as needed 
+}
+
+/* Styling for answer box */
+/*.detail-item .answer {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #e9f7fd; /* Light background color 
+  border-radius: 5px;
+  width: calc(100% - 220px); /* Adjust based on label width 
+}

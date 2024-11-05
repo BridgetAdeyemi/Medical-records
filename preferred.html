@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./preferred.css" />
+    <!--font awesome link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--font awesome link ends-->
+    <title>Preferred-Doctor</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-1">
+        <div class="header">
+          <div class="back-btn1">
+            <button id="goBackButton">
+              <i class="fa-solid fa-chevron-left"></i> Go back
+            </button>
+          </div>
+          <img src="asset/images/logo0.svg" alt="Clove-logo" />
+          <h1>
+            Do you have any preference to your <span>medical consultation</span>
+          </h1>
+          <p>Help our doctors serve you better</p>
+        </div>
+        <div class="img1">
+          <img src="asset/images/doctor.png" alt="image1" class="img1" />
+        </div>
+      </div>
+
+      <div class="container-2">
+        <div class="back-btn2">
+          <button id="BackButton">
+            <i class="fa-solid fa-chevron-left"></i> Go back
+          </button>
+        </div>
+
+        <!-- medical form -->
+        <div class="form-container">
+          <form action="">
+            <label for="preferred-gender">Preferred Gender of Doctor</label>
+            <div class="input-div">
+              <input
+                type="radio"
+                name="gender"
+                value="no-preference"
+                id="no-preference"
+              />
+              <label for="">No Preference</label>
+
+              <input type="radio" name="gender" value="male" id="male" />
+              <label for="male">Male</label>
+
+              <input type="radio" name="gender" value="female" id="female" />
+              <label for="female">Female</label>
+            </div>
+
+            <label for="language">Preferred Language</label>
+            <select name="language" id="language" required>
+              <option value="select">Select...</option>
+              <option value="english">English</option>
+            </select>
+
+            <label for="specialty">Specialty Preference</label>
+            <select name="specialty" id="specialty" required>
+              <option value="select">Select...</option>
+              <option value="General">General Practitioner</option>
+              <option value="Orthopedics">Orthopedics</option>
+              <option value="Cardiologies">Cardiologies</option>
+              <option value="Dietitian">Dietitian</option>
+            </select>
+          </form>
+          <!-- medical form ends -->
+
+          <div class="continue">
+            <button
+              onclick="
+              "
+            >
+              Continue
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./preferred.js"></script>
+  </body>
+</html>

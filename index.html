@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Medical History</title>
+  </head>
+  <body>
+    <!--Medical  container begins-->
+    <div class="medical-container">
+      <div class="medical-content">
+        <img src="asset/images/logo0.svg" alt="Clove-logo" />
+        <h1>Tell us about your <span>medical history</span></h1>
+        <p>
+          Help our doctors get a better glimpse of your health history if any.
+          <span>
+            Kindly note that any information submitted to Clover will not be
+            shared with any third party without your consent.</span
+          >
+        </p>
+        <img src="asset/images/image0.png" alt="image1" class="img1" />
+      </div>
+
+      <!--Medical form begins-->
+      <div class="medical-form">
+        <form id="medicalForm">
+          <label for="conditions">Pre-existing Conditions</label>
+          <select name="conditons" id="conditions" required>
+            <option value="select">Select...</option>
+            <option value="asthma">Asthma</option>
+            <option value="diabetes">Diabetes</option>
+            <option value="hypertension">Hypertension</option>
+            <option value="other">other (specify)</option>
+          </select>
+
+          <label for="family-medical">Family medical history</label>
+          <select name="family-medical" id="family-medical" required>
+            <option value="select">Select...</option>
+            <option value="heart">Heart disease</option>
+            <option value="cancer">Cancer</option>
+            <option value="fibroid">Fibroid</option>
+            <option value="specify">Sepcify</option>
+          </select>
+
+          <label for="allergies">Allergies</label>
+          <input type="text" placeholder="Enter here" />
+          <p>Add a comma after each medication to seperate them</p>
+
+          <label for="allergies">Current Medications</label>
+          <input type="text" placeholder="Enter here" />
+          <p>Add a comma after each medication to seperate them</p>
+
+          <label for="surgeries">Previous Surgeries or Procedures</label>
+          <input type="text" placeholder="Enter here" />
+          <p>Add a comma after each medication to seperate them</p>
+        </form>
+        <!--Medical form ends-->
+        <button type="button" onclick="saveMedicalData()">Continue</button>
+      </div>
+    </div>
+    <!--Medical history div container ends-->
+    <script src="./script.js"></script>
+  </body>
+</html>
